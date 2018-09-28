@@ -256,7 +256,7 @@
             this.comboBox_Language.Size = new System.Drawing.Size(62, 23);
             this.comboBox_Language.TabIndex = 4;
             this.comboBox_Language.ValueMember = "Code";
-            this.comboBox_Language.SelectedIndexChanged += new System.EventHandler(this.comboBox_Language_SelectedIndexChanged);
+           //  this.comboBox_Language.SelectedIndexChanged += new System.EventHandler(this.comboBox_Language_SelectedIndexChanged);
             // 
             // tabControl
             // 
