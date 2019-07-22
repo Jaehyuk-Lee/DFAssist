@@ -203,5 +203,7 @@
   "l-fate-occured-info": "F: {0} 돌발 발생!",
 
   "l-field-instance-entered": "I: 인스턴스 필드 입장함 [{0}]",
-  "l-field-instance-left": "I: 인스턴스 필드 퇴장함"
+  "l-field-instance-left": "I: 인스턴스 필드 퇴장함",
+
+  "message-no-auto-update": "이 버전(파일)은 디버그 전용 버전으로, 자동 업데이트를 지원하지 않습니다."
 }

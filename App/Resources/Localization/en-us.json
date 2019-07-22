@@ -203,5 +203,7 @@
   "l-fate-occured-info": "F: {0} FATE occured!",
 
   "l-field-instance-entered": "I: Entered instance area [{0}]",
-  "l-field-instance-left": "I: Left instance area"
+  "l-field-instance-left": "I: Left instance area",
+
+  "message-no-auto-update": "This version(file) is Debug-only version, auto update function is not supported."
 }

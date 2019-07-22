@@ -33,6 +33,8 @@ namespace App
         {
             base.OnShown(e);
 
+            LMessageBox.I("message-no-auto-update");
+
             if (!Settings.StartupShowMainForm)
             {
                 Hide();
@@ -150,13 +152,6 @@ namespace App
                     }
                 }
             });
-
-            if (Settings.Updated)
-            {
-                Settings.Updated = false;
-                Settings.Save();
-                ShowNotification("notification-app-updated", Global.VERSION);
-            }
         }
 
         internal void refresh_Fates()

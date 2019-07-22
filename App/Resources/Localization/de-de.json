@@ -203,5 +203,7 @@
   "l-fate-occured-info": "F: FATE {0} erschienen!",
 
   "l-field-instance-entered": "I: Instanz-Gebiet [{0}] betreten",
-  "l-field-instance-left": "I: Instanz-Gebiet verlassen"
+  "l-field-instance-left": "I: Instanz-Gebiet verlassen",
+
+  "message-no-auto-update": "Diese Version (Datei) ist nur debugs gewidmet, und die Funktion Automatische Updates wird nicht unterstützt."
 }

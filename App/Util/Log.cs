@@ -62,6 +62,11 @@ namespace App
 #endif
         }
 
+        internal static void Debug(string key)
+        {
+            Write(Color.DarkOrange, key);
+        }
+
         internal static void D(object format, params object[] args)
         {
 #if DEBUG

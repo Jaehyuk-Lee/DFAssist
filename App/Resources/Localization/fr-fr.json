@@ -203,5 +203,7 @@
   "l-fate-occured-info": "F: {0} ALEA en cours!",
 
   "l-field-instance-entered": "I: Entrée dans la zone instanciée [{0}]",
-  "l-field-instance-left": "I: Sortie de la zone instanciée"
+  "l-field-instance-left": "I: Sortie de la zone instanciée",
+
+  "message-no-auto-update": "Cette version(fichier) est la version Debug-only, la fonction de mise à jour automatique n'est pas supportée."
 }

@@ -203,5 +203,7 @@
   "l-fate-occured-info": "F: {0} FATE発生!",
 
   "l-field-instance-entered": "I: インスタンスエリアに入りました [{0}]",
-  "l-field-instance-left": "I: インスタンスエリアから離れました"
+  "l-field-instance-left": "I: インスタンスエリアから離れました",
+
+  "message-no-auto-update": "このバージョン(ファイル)はデバッグ専用バージョンで,自動アップデートを支援しません。"
 }
