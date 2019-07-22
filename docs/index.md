@@ -10,7 +10,7 @@ title: {{ site.name }}
 
 ## 정보
 
-- 최신 버전 ```v20190614.1``` ([다운로드](https://github.com/jaehyuk-lee/DFAssist/releases/latest))
+- 최신 버전 ```v20190721.1``` ([다운로드](https://github.com/jaehyuk-lee/DFAssist/releases/latest))
 - 타겟 버전 ```Microsoft .NET Framework 4.0``` ([다운로드](https://www.microsoft.com/ko-kr/download/details.aspx?id=17851))
 - 게임 버전 ```파이널 판타지 14 한국판, 버전 4.5```또는 ```글로벌판, 버전 5.0```
 
@@ -28,6 +28,7 @@ title: {{ site.name }}
   - 파이널 판타지 14가 최소화되어 있는 상태에서 현재 매칭 상태를 실시간으로 확인 가능 (오버레이 & 아이콘 깜빡임)
   - 무작위 임무가 매칭됐을 시 매칭된 임무가 어떤 임무인지 입장 전 확인 가능 (설정 필요)
   - 미리 설정한 돌발 임무가 현재 위치한 맵에 발생했을 경우 알림 가능 (이벤트 돌발, 고대무기 돌발 등)
+  - 매칭된 임무에 해당하는 매크로 자동 복사 기능 (매크로 데이터가 임무/돌발 데이터에 포함되어 있어야 합니다.)
   - 알림음 사용자 지정 가능
 - 텔레그램이나 디스코드로 알림 기능
   - 디스코드 알림은 [DFAssist 디스코드 서버](https://discord.gg/RqesxtS)에 참여한 상태에만 알림 수신 가능
@@ -75,9 +76,9 @@ title: {{ site.name }}
 
 ### 프로그램 UI
 
-![프로그램 UI 1](https://i.imgur.com/K7vc0yd.png)  
+![프로그램 UI 1](https://i.imgur.com/u27a3Hh.png)  
 ![프로그램 UI 2](https://i.imgur.com/bkBCc2q.png)  
-![프로그램 UI 3](https://i.imgur.com/TC9wXBO.png)
+![프로그램 UI 3](https://i.imgur.com/9v7REPc.png)
 
 ### 알림창 아이콘
 

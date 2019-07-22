@@ -9,6 +9,7 @@ namespace App
     {
         public static bool Initialized { get; private set; } = false;
         public static decimal Version { get; private set; } = 0;
+        public static string Language { get; private set; } = "";
 
         public static Dictionary<int, Area> Areas { get; private set; } = new Dictionary<int, Area>();
         public static Dictionary<int, Instance> Instances { get; private set; } = new Dictionary<int, Instance>();
@@ -33,6 +34,10 @@ namespace App
                     json = Resources.Data_FR_FR;
                     break;
 
+                case "de-de":
+                    json = Resources.Data_DE_DE;
+                    break;
+
                 case "ja-jp":
                     json = Resources.Data_JA_JP;
                     break;
@@ -52,7 +57,7 @@ namespace App
 
                 var version = data.Version;
 
-                if (version > Version)
+                if (version > Version || Language != Settings.Language)
                 {
                     var fates = new Dictionary<int, FATE>();
                     foreach (var area in data.Areas)
@@ -69,6 +74,7 @@ namespace App
                     Roulettes = data.Roulettes;
                     FATEs = fates;
                     Version = version;
+                    Language = Settings.Language;
 
                     if (Initialized)
                     {

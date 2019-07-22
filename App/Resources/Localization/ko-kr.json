@@ -26,8 +26,10 @@
   "fate-preset-animus-SkywindI": "바람의 서 1권",
   "fate-preset-animus-SkywindII": "바람의 서 2권",
   "fate-preset-animus-SkyearthI": "땅의 서 1권",
-  "fate-preset-Ixion": "익시온",
-  "fate-preset-Tamamo": "타마모",
+  "fate-preset-Ixion": "익시온 (호반지대)",
+  "fate-preset-Tamamo": "타마모 (얀샤)",
+  "fate-preset-frogMount": "개구리 탈 것 (콜루시아)",
+  "fate-preset-frogSuit": "개구리 옷 (템페스트)",
 
 
   "ui-notifymenustrip-open": "열기",
@@ -53,8 +55,11 @@
   "ui-settings-startupshow": "프로그램 시작시 이 창 보이기",
   "ui-settings-iconflash": "매칭/돌발 발생시 파이널판타지14 작업 표시줄 아이콘 깜빡이기",
   "ui-settings-cheatroulette": "무작위 임무일 경우에도 실제 매칭된 임무 보여주기",
-  "ui-settings-usevpn": "VPN을 사용하는데, FFXIV 프로세스를 찾지 못하네요.",
-  "ui-settings-usevpn-alert": "VPN을 사용하지 않을 때는 꺼주셔야 프로그램이 잘 작동합니다.",
+  "ui-settings-copymacro": "매크로 정보가 있는 경우, 클립보드에 자동으로 매크로 복사",
+  "ui-settings-copymacro-dialog-title": "DFA 매크로 복사",
+  "ui-settings-copymacro-dialog-text": "<{0}> 임무의 매크로를 클립보드에 복사하시겠습니까?",
+  "ui-settings-usevpn": "로컬 네트워크 필터링 해제 (VPN 등)",
+  "ui-settings-usevpn-alert": "보통은 꺼주셔야 네트워크 패킷을 읽을 수 있습니다.",
   "ui-settings-fatesound": "돌발임무 알림음 활성화\n(돌발임무 알림에서 사용자 알림음 사용 안함)",
   "ui-settings-customsound": "알림음 사용자 설정",
   "ui-settings-getsoundfile": "파일 선택",
@@ -87,13 +92,13 @@
   "ui-logs-copy": "로그 복사",
   "ui-logs-clear": "로그 삭제",
 
-  "ui-info-about": "[제작 및 문의]\n유채색\n라그린네\n히비야\n윈도ce\n[도움] : 고먐미\n[저작권]\n기재되어있는 회사명 · 제품명 · 시스템 이름은\n해당 소유자의 상표 또는 등록 상표입니다.\n(C) 2010 - 2019 SQUARE ENIX CO., LTD All Rights Reserved.\nKorea Published by ACTOZ SOFT.",
+  "ui-info-about": "[제작 및 문의]\n유채색\n라그린네\n히비야\n윈도ce\n[도움] 고먐미\n[저작권]\n기재되어있는 회사명 · 제품명 · 시스템 이름은\n해당 소유자의 상표 또는 등록 상표입니다.\n(C) 2010 - 2019 SQUARE ENIX CO., LTD All Rights Reserved.\nKorea Published by ACTOZ SOFT.",
 
   "ui-msgbox-title-info": "DFA 알림",
   "ui-msgbox-title-warning": "DFA 경고",
   "ui-msgbox-title-error": "DFA 오류",
 
-  "ui-language-changed": "언어가 한국어로 변경되었습니다.\n일부 부분은 프로그램 재시작을 해야 반영됩니다.\n프로그램을 재시작해주세요.",
+  "ui-language-changed": "언어가 한국어로 변경되었습니다.\n오버레이 부분은 매칭 현황에 변화가 생기면 적용됩니다.\n지금 바로 적용하고 싶다면, 프로그램을 재시작해주세요.",
 
   "ui-clipboard-copied": "클립보드에 복사되었습니다.",
 

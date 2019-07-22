@@ -10,7 +10,7 @@ title: {{ site.name }}
 
 ## Information
 
-- 最新バージョン ```v20190614.1``` ([ダウンロード](https://github.com/jaehyuk-lee/DFAssist/releases/latest))
+- 最新バージョン ```v20190721.1``` ([ダウンロード](https://github.com/jaehyuk-lee/DFAssist/releases/latest))
 - 必要バージョン ```Microsoft .NET Framework 4.0``` ([ダウンロード](https://www.microsoft.com/ja-jp/download/details.aspx?id=17851))
 - ゲームバージョン ```Final Fantasy XIV, バージョン 5.0```
 
@@ -28,6 +28,7 @@ title: {{ site.name }}
   - FFXIVが最小化されていてもコンテンツ参加申請中の状態をリアルタイムで表示します。突入準備が完了したら通知します。
   - コンテンツルーレットを使用した場合何のコンテンツにマッチングしたかを表示できます。 (設定が必要です)
   - F.A.T.Eの発生を通知します。(キャラクターがFATEエリア内にいる必要があります)
+  - マッチングされた任務に該当するマクロ自動コピー機能(マクロデータが任務/FATEデータに含まれていなければなりません。)
   - カスタム通知サウンド。
 - TelegramやDiscordでアラーム機能
   - Discordメッセージは、[DFAssist Discordサーバ](https://discord.gg/RqesxtS)に参加している時にのみ受信できます。
@@ -68,9 +69,9 @@ title: {{ site.name }}
 
 ### アプリケーションUI
 
-![アプリケーションUI 1](https://i.imgur.com/04glAbH.png)  
+![アプリケーションUI 1](https://i.imgur.com/IKGvVAh.png)  
 ![アプリケーションUI 2](https://i.imgur.com/83Iuen4.png)  
-![アプリケーションUI 2](https://i.imgur.com/VC7igXV.png)
+![アプリケーションUI 2](https://i.imgur.com/Q6ZZY3f.png)
 
 ### トレイアイコン
 

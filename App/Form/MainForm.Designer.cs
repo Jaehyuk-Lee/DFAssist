@@ -46,6 +46,7 @@
             this.tabControl = new App.TabControlBlack();
             this.tabPage_Settings = new System.Windows.Forms.TabPage();
             this.groupBox_DefaultSet = new System.Windows.Forms.GroupBox();
+            this.checkBox_CopyMacro = new System.Windows.Forms.CheckBox();
             this.checkBox_autoHideOverlay = new System.Windows.Forms.CheckBox();
             this.checkBox_useVPN = new System.Windows.Forms.CheckBox();
             this.label_CustomSoundFileName = new System.Windows.Forms.Label();
@@ -99,6 +100,9 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.IxionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.TamamoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.frogMountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.frogSuitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem_SelectApply = new System.Windows.Forms.ToolStripMenuItem();
             this.tabPage_Log = new System.Windows.Forms.TabPage();
             this.panel_LogCover = new System.Windows.Forms.Panel();
@@ -320,6 +324,7 @@
             // 
             // groupBox_DefaultSet
             // 
+            this.groupBox_DefaultSet.Controls.Add(this.checkBox_CopyMacro);
             this.groupBox_DefaultSet.Controls.Add(this.checkBox_autoHideOverlay);
             this.groupBox_DefaultSet.Controls.Add(this.checkBox_useVPN);
             this.groupBox_DefaultSet.Controls.Add(this.label_CustomSoundFileName);
@@ -334,10 +339,22 @@
             this.groupBox_DefaultSet.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox_DefaultSet.Location = new System.Drawing.Point(0, 0);
             this.groupBox_DefaultSet.Name = "groupBox_DefaultSet";
-            this.groupBox_DefaultSet.Size = new System.Drawing.Size(426, 208);
+            this.groupBox_DefaultSet.Size = new System.Drawing.Size(426, 229);
             this.groupBox_DefaultSet.TabIndex = 0;
             this.groupBox_DefaultSet.TabStop = false;
             this.groupBox_DefaultSet.Text = "기본설정";
+            // 
+            // checkBox_CopyMacro
+            // 
+            this.checkBox_CopyMacro.AutoSize = true;
+            this.checkBox_CopyMacro.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.checkBox_CopyMacro.Location = new System.Drawing.Point(6, 128);
+            this.checkBox_CopyMacro.Name = "checkBox_CopyMacro";
+            this.checkBox_CopyMacro.Size = new System.Drawing.Size(345, 19);
+            this.checkBox_CopyMacro.TabIndex = 7;
+            this.checkBox_CopyMacro.Text = "매크로 정보가 있는 경우, 클립보드에 자동으로 매크로 복사";
+            this.checkBox_CopyMacro.UseVisualStyleBackColor = true;
+            this.checkBox_CopyMacro.CheckedChanged += new System.EventHandler(this.checkBox_CopyMacro_CheckedChanged);
             // 
             // checkBox_autoHideOverlay
             // 
@@ -356,11 +373,11 @@
             // 
             this.checkBox_useVPN.AutoSize = true;
             this.checkBox_useVPN.Font = new System.Drawing.Font("맑은 고딕", 9F);
-            this.checkBox_useVPN.Location = new System.Drawing.Point(6, 128);
+            this.checkBox_useVPN.Location = new System.Drawing.Point(6, 149);
             this.checkBox_useVPN.Name = "checkBox_useVPN";
-            this.checkBox_useVPN.Size = new System.Drawing.Size(310, 19);
-            this.checkBox_useVPN.TabIndex = 7;
-            this.checkBox_useVPN.Text = "VPN을 사용하는데, FFXIV 프로세스를 찾지 못하네요.";
+            this.checkBox_useVPN.Size = new System.Drawing.Size(222, 19);
+            this.checkBox_useVPN.TabIndex = 8;
+            this.checkBox_useVPN.Text = "로컬 네트워크 필터링 해제 (VPN 등)";
             this.checkBox_useVPN.UseVisualStyleBackColor = true;
             this.checkBox_useVPN.CheckedChanged += new System.EventHandler(this.checkBox_useVPN_CheckedChanged);
             this.checkBox_useVPN.MouseUp += new System.Windows.Forms.MouseEventHandler(this.checkBox_useVPN_MouseUp);
@@ -368,7 +385,7 @@
             // label_CustomSoundFileName
             // 
             this.label_CustomSoundFileName.AutoSize = true;
-            this.label_CustomSoundFileName.Location = new System.Drawing.Point(213, 186);
+            this.label_CustomSoundFileName.Location = new System.Drawing.Point(213, 207);
             this.label_CustomSoundFileName.Name = "label_CustomSoundFileName";
             this.label_CustomSoundFileName.Size = new System.Drawing.Size(115, 17);
             this.label_CustomSoundFileName.TabIndex = 0;
@@ -377,10 +394,10 @@
             // button_getSoundFile
             // 
             this.button_getSoundFile.Font = new System.Drawing.Font("맑은 고딕", 8F);
-            this.button_getSoundFile.Location = new System.Drawing.Point(142, 185);
+            this.button_getSoundFile.Location = new System.Drawing.Point(142, 206);
             this.button_getSoundFile.Name = "button_getSoundFile";
             this.button_getSoundFile.Size = new System.Drawing.Size(70, 20);
-            this.button_getSoundFile.TabIndex = 10;
+            this.button_getSoundFile.TabIndex = 11;
             this.button_getSoundFile.Text = "파일 선택";
             this.button_getSoundFile.UseVisualStyleBackColor = true;
             this.button_getSoundFile.Click += new System.EventHandler(this.button_getSoundFile_Click);
@@ -389,10 +406,10 @@
             // 
             this.checkBox_CustomSound.AutoSize = true;
             this.checkBox_CustomSound.Font = new System.Drawing.Font("맑은 고딕", 9F);
-            this.checkBox_CustomSound.Location = new System.Drawing.Point(6, 186);
+            this.checkBox_CustomSound.Location = new System.Drawing.Point(6, 207);
             this.checkBox_CustomSound.Name = "checkBox_CustomSound";
             this.checkBox_CustomSound.Size = new System.Drawing.Size(130, 19);
-            this.checkBox_CustomSound.TabIndex = 9;
+            this.checkBox_CustomSound.TabIndex = 10;
             this.checkBox_CustomSound.Text = "알림음 사용자 설정";
             this.checkBox_CustomSound.UseVisualStyleBackColor = true;
             this.checkBox_CustomSound.CheckedChanged += new System.EventHandler(this.checkBox_CustomSound_CheckedChanged);
@@ -402,10 +419,10 @@
             // 
             this.checkBox_FateSound.AutoSize = true;
             this.checkBox_FateSound.Font = new System.Drawing.Font("맑은 고딕", 9F);
-            this.checkBox_FateSound.Location = new System.Drawing.Point(6, 149);
+            this.checkBox_FateSound.Location = new System.Drawing.Point(6, 170);
             this.checkBox_FateSound.Name = "checkBox_FateSound";
             this.checkBox_FateSound.Size = new System.Drawing.Size(270, 34);
-            this.checkBox_FateSound.TabIndex = 8;
+            this.checkBox_FateSound.TabIndex = 9;
             this.checkBox_FateSound.Text = "돌발임무 알림음 활성화\r\n(돌발임무 알림에서 사용자 알림음 사용 안함)";
             this.checkBox_FateSound.UseVisualStyleBackColor = true;
             this.checkBox_FateSound.CheckedChanged += new System.EventHandler(this.checkBox_FateSound_CheckedChanged);
@@ -532,9 +549,9 @@
             // label_DiscordAbout
             // 
             this.label_DiscordAbout.Font = new System.Drawing.Font("맑은 고딕", 8F);
-            this.label_DiscordAbout.Location = new System.Drawing.Point(10, 45);
+            this.label_DiscordAbout.Location = new System.Drawing.Point(4, 45);
             this.label_DiscordAbout.Name = "label_DiscordAbout";
-            this.label_DiscordAbout.Size = new System.Drawing.Size(415, 92);
+            this.label_DiscordAbout.Size = new System.Drawing.Size(421, 92);
             this.label_DiscordAbout.TabIndex = 13;
             this.label_DiscordAbout.Text = "입력된 디스코드 계정으로도 멘션을 통해 알림을 보냅니다.\r\n디스코드 ID는 15자리 이상의 숫자입니다.\r\n\r\n디스코드 ID는 DFAssist 디스" +
     "코드 서버에서 #get-discord-id 채널에 !id 를 입력하면 확인할 수 있습니다.\r\n또한, DFAssist 디스코드 서버에 참여한 상태" +
@@ -588,9 +605,9 @@
             // label_TelegramAbout
             // 
             this.label_TelegramAbout.Font = new System.Drawing.Font("맑은 고딕", 8F);
-            this.label_TelegramAbout.Location = new System.Drawing.Point(10, 45);
+            this.label_TelegramAbout.Location = new System.Drawing.Point(4, 45);
             this.label_TelegramAbout.Name = "label_TelegramAbout";
-            this.label_TelegramAbout.Size = new System.Drawing.Size(407, 53);
+            this.label_TelegramAbout.Size = new System.Drawing.Size(421, 53);
             this.label_TelegramAbout.TabIndex = 13;
             this.label_TelegramAbout.Text = "매칭이 되면 입력한 텔레그램 채팅방으로 메시지를 보내 해당 사실을 알립니다.\r\n원하는 돌발이 발생했을 시에도 메시지를 보내 해당 사실을 알립니다." +
     "\r\n채팅방 ID는 DFAssist Notify Bot에게 아무 메시지나 보내면 확인할 수 있습니다.";
@@ -777,7 +794,10 @@
             this.bookOfSkyearthIToolStripMenuItem,
             this.toolStripSeparator1,
             this.IxionToolStripMenuItem,
-            this.TamamoToolStripMenuItem});
+            this.TamamoToolStripMenuItem,
+            this.toolStripSeparator2,
+            this.frogMountToolStripMenuItem,
+            this.frogSuitToolStripMenuItem});
             this.presetToolStripMenuItem.Name = "presetToolStripMenuItem";
             this.presetToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
             this.presetToolStripMenuItem.Text = "프리셋";
@@ -785,99 +805,118 @@
             // bookOfSkyfireIToolStripMenuItem
             // 
             this.bookOfSkyfireIToolStripMenuItem.Name = "bookOfSkyfireIToolStripMenuItem";
-            this.bookOfSkyfireIToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.bookOfSkyfireIToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.bookOfSkyfireIToolStripMenuItem.Text = "불의 서 1권";
             this.bookOfSkyfireIToolStripMenuItem.Click += new System.EventHandler(this.bookOfSkyfireIToolStripMenuItem_Click);
             // 
             // bookOfSkyfireIIToolStripMenuItem
             // 
             this.bookOfSkyfireIIToolStripMenuItem.Name = "bookOfSkyfireIIToolStripMenuItem";
-            this.bookOfSkyfireIIToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.bookOfSkyfireIIToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.bookOfSkyfireIIToolStripMenuItem.Text = "불의 서 2권";
             this.bookOfSkyfireIIToolStripMenuItem.Click += new System.EventHandler(this.bookOfSkyfireIIToolStripMenuItem_Click);
             // 
             // bookOfNetherfireIToolStripMenuItem
             // 
             this.bookOfNetherfireIToolStripMenuItem.Name = "bookOfNetherfireIToolStripMenuItem";
-            this.bookOfNetherfireIToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.bookOfNetherfireIToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.bookOfNetherfireIToolStripMenuItem.Text = "불의 서 3권";
             this.bookOfNetherfireIToolStripMenuItem.Click += new System.EventHandler(this.bookOfNetherfireIToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(146, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(199, 6);
             // 
             // bookOfSkyfallIToolStripMenuItem
             // 
             this.bookOfSkyfallIToolStripMenuItem.Name = "bookOfSkyfallIToolStripMenuItem";
-            this.bookOfSkyfallIToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.bookOfSkyfallIToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.bookOfSkyfallIToolStripMenuItem.Text = "물의 서 1권";
             this.bookOfSkyfallIToolStripMenuItem.Click += new System.EventHandler(this.bookOfSkyfallIToolStripMenuItem_Click);
             // 
             // bookOfSkyfallIIToolStripMenuItem
             // 
             this.bookOfSkyfallIIToolStripMenuItem.Name = "bookOfSkyfallIIToolStripMenuItem";
-            this.bookOfSkyfallIIToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.bookOfSkyfallIIToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.bookOfSkyfallIIToolStripMenuItem.Text = "물의 서 2권";
             this.bookOfSkyfallIIToolStripMenuItem.Click += new System.EventHandler(this.bookOfSkyfallIIToolStripMenuItem_Click);
             // 
             // bookOfNetherfireIToolStripMenuItem1
             // 
             this.bookOfNetherfireIToolStripMenuItem1.Name = "bookOfNetherfireIToolStripMenuItem1";
-            this.bookOfNetherfireIToolStripMenuItem1.Size = new System.Drawing.Size(149, 22);
+            this.bookOfNetherfireIToolStripMenuItem1.Size = new System.Drawing.Size(202, 22);
             this.bookOfNetherfireIToolStripMenuItem1.Text = "물의 서 3권";
             this.bookOfNetherfireIToolStripMenuItem1.Click += new System.EventHandler(this.bookOfNetherfireIToolStripMenuItem1_Click);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(146, 6);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(199, 6);
             // 
             // bookOfSkywindIToolStripMenuItem
             // 
             this.bookOfSkywindIToolStripMenuItem.Name = "bookOfSkywindIToolStripMenuItem";
-            this.bookOfSkywindIToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.bookOfSkywindIToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.bookOfSkywindIToolStripMenuItem.Text = "바람의 서 1권";
             this.bookOfSkywindIToolStripMenuItem.Click += new System.EventHandler(this.bookOfSkywindIToolStripMenuItem_Click);
             // 
             // bookOfSkywindIIToolStripMenuItem
             // 
             this.bookOfSkywindIIToolStripMenuItem.Name = "bookOfSkywindIIToolStripMenuItem";
-            this.bookOfSkywindIIToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.bookOfSkywindIIToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.bookOfSkywindIIToolStripMenuItem.Text = "바람의 서 2권";
             this.bookOfSkywindIIToolStripMenuItem.Click += new System.EventHandler(this.bookOfSkywindIIToolStripMenuItem_Click);
             // 
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(146, 6);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(199, 6);
             // 
             // bookOfSkyearthIToolStripMenuItem
             // 
             this.bookOfSkyearthIToolStripMenuItem.Name = "bookOfSkyearthIToolStripMenuItem";
-            this.bookOfSkyearthIToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.bookOfSkyearthIToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
             this.bookOfSkyearthIToolStripMenuItem.Text = "땅의 서 1권";
             this.bookOfSkyearthIToolStripMenuItem.Click += new System.EventHandler(this.bookOfSkyearthIToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(146, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(199, 6);
             // 
             // IxionToolStripMenuItem
             // 
             this.IxionToolStripMenuItem.Name = "IxionToolStripMenuItem";
-            this.IxionToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
-            this.IxionToolStripMenuItem.Text = "익시온";
+            this.IxionToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
+            this.IxionToolStripMenuItem.Text = "익시온 (호반지대)";
             this.IxionToolStripMenuItem.Click += new System.EventHandler(this.IxionToolStripMenuItem_Click);
             // 
             // TamamoToolStripMenuItem
             // 
             this.TamamoToolStripMenuItem.Name = "TamamoToolStripMenuItem";
-            this.TamamoToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
-            this.TamamoToolStripMenuItem.Text = "타마모";
+            this.TamamoToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
+            this.TamamoToolStripMenuItem.Text = "타마모 (얀샤)";
             this.TamamoToolStripMenuItem.Click += new System.EventHandler(this.TamamoToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(199, 6);
+            // 
+            // frogMountToolStripMenuItem
+            // 
+            this.frogMountToolStripMenuItem.Name = "frogMountToolStripMenuItem";
+            this.frogMountToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
+            this.frogMountToolStripMenuItem.Text = "개구리 탈 것 (콜루시아)";
+            this.frogMountToolStripMenuItem.Click += new System.EventHandler(this.frogMountToolStripMenuItem_Click);
+            // 
+            // frogSuitToolStripMenuItem
+            // 
+            this.frogSuitToolStripMenuItem.Name = "frogSuitToolStripMenuItem";
+            this.frogSuitToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
+            this.frogSuitToolStripMenuItem.Text = "개구리 옷 (템페스트)";
+            this.frogSuitToolStripMenuItem.Click += new System.EventHandler(this.frogSuitToolStripMenuItem_Click);
             // 
             // toolStripMenuItem_SelectApply
             // 
@@ -968,9 +1007,9 @@
             this.label_About.Name = "label_About";
             this.label_About.Size = new System.Drawing.Size(426, 211);
             this.label_About.TabIndex = 0;
-            this.label_About.Text = "[제작 및 문의]\r\n유채색\r\n라그린네\r\n히비야\r\n\r\n[저작권]\r\n기재되어있는 회사명 · 제품명 · 시스템 이름은\r\n해당 소유자의 상표 또는 등록 " +
-    "상표입니다.\r\n(C) 2010 - 2017 SQUARE ENIX CO., LTD All Rights Reserved.\r\nKorea Publish" +
-    "ed by ACTOZ SOFT.";
+            this.label_About.Text = "[제작 및 문의]\r\n유채색\r\n라그린네\r\n히비야\r\n윈도ce\r\n[도움] 고먐미\r\n[저작권]\r\n기재되어있는 회사명 · 제품명 · 시스템 이름은\r\n해당 " +
+    "소유자의 상표 또는 등록 상표입니다.\r\n(C) 2010 - 2019 SQUARE ENIX CO., LTD All Rights Reserved.\r" +
+    "\nKorea Published by ACTOZ SOFT.";
             this.label_About.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // linkLabel_GitHub
@@ -1448,6 +1487,10 @@
         internal System.Windows.Forms.CheckBox checkBox_hexadecimal;
         internal System.Windows.Forms.CheckBox checkBox_checkFATEs;
         private System.Windows.Forms.CheckBox checkBox_autoHideOverlay;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripMenuItem frogSuitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem frogMountToolStripMenuItem;
+        private System.Windows.Forms.CheckBox checkBox_CopyMacro;
     }
 }
 

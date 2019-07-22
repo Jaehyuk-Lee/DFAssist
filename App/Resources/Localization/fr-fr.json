@@ -26,8 +26,10 @@
   "fate-preset-animus-SkywindI": "Book of Skywind I",
   "fate-preset-animus-SkywindII": "Book of Skywind II",
   "fate-preset-animus-SkyearthI": "Book of Skyearth I",
-  "fate-preset-Ixion": "Ixion",
-  "fate-preset-Tamamo": "Tamamo",
+  "fate-preset-Ixion": "Ixion (Les Lacs)",
+  "fate-preset-Tamamo": "Tamamo (Yanxia)",
+  "fate-preset-frogMount": "Frog Mount (Kholusia)",
+  "fate-preset-frogSuit": "Frog Suit (Tempest)",
 
 
   "ui-notifymenustrip-open": "Ouvrir",
@@ -53,8 +55,11 @@
   "ui-settings-startupshow": "Afficher la fenêtre principale au démarrage",
   "ui-settings-iconflash": "Faire clignorer l'icône de FFXIV en cas d'ALEA/Mission",
   "ui-settings-cheatroulette": "Montrer la mission en cours d'attente lors des missions aléatoires",
-  "ui-settings-usevpn": "J’utilise le VPN, et le DFAssist ne prend pas le jeu Connection.",
-  "ui-settings-usevpn-alert": "Lorsque vous n'utilisez pas le VPN, veuillez désactiver cette option.",
+  "ui-settings-copymacro": "Copier automatiquement les macros à partir des données de mission lorsque le mission correspond.",
+  "ui-settings-copymacro-dialog-title": "DFA Copy macro",
+  "ui-settings-copymacro-dialog-text": "Copiez la <{0}> macro dans le presse-papiers?",
+  "ui-settings-usevpn": "ne pas filtrer la connexion réseau locale (VPN, etc.)",
+  "ui-settings-usevpn-alert": "Normalement, vous devez désactiver cette option pour capturer le paquet réseau.",
   "ui-settings-fatesound": "Activer le son de notification ALEA \n (Désactiver le son personnalisé sur ALEA)",
   "ui-settings-customsound": "Personnaliser le son de notification",
   "ui-settings-getsoundfile": "Choisir",
@@ -87,13 +92,13 @@
   "ui-logs-copy": "Copier logs",
   "ui-logs-clear": "Vider",
 
-  "ui-info-about": "[Contributeurs]\n유채색\nLaiglinne\nHibiyasleep\nAlex00728\n\n[Copyright]\nAll company, product, system names are\n registered or unregistered trademarks of their respective owners.\n(C)2010 - 2019 SQUARE ENIX CO., LTD All Rights Reserved.\nKorea Published by ACTOZ SOFT.",
+  "ui-info-about": "[Contributeurs]\n유채색\nLaiglinne\nHibiyasleep\nAlex00728 (Jaehyuk-Lee)\n\n[Copyright]\nAll company, product, system names are\n registered or unregistered trademarks of their respective owners.\n(C)2010 - 2019 SQUARE ENIX CO., LTD All Rights Reserved.\nKorea Published by ACTOZ SOFT.",
 
   "ui-msgbox-title-info": "DFA Notice",
   "ui-msgbox-title-warning": "DFA Warning",
   "ui-msgbox-title-error": "DFA Error",
 
-  "ui-language-changed": "Langue changée en Français.\nUn redémarrage est nécessaire.\nVeuillez redémarrer l'application.",
+  "ui-language-changed": "Langue changée en Français.\nLe langage de superposition sera appliqué après les changements de statut de la file d'attente.\nVeuillez redémarrer l'application pour qu'elle prenne effet immédiatement.",
 
   "ui-clipboard-copied": "Copié dans le presse-papiers.",
 

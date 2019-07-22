@@ -26,8 +26,10 @@
   "fate-preset-animus-SkywindI": "Book of Skywind I",
   "fate-preset-animus-SkywindII": "Book of Skywind II",
   "fate-preset-animus-SkyearthI": "Book of Skyearth I",
-  "fate-preset-Ixion": "Ixion",
-  "fate-preset-Tamamo": "Tamamo",
+  "fate-preset-Ixion": "Ixion (The Lochs)",
+  "fate-preset-Tamamo": "Tamamo (Yanxia)",
+  "fate-preset-frogMount": "Frog Mount (Kholusia)",
+  "fate-preset-frogSuit": "Frog Suit (Tempest)",
 
   
   "ui-notifymenustrip-open": "Open",
@@ -49,12 +51,15 @@
   "ui-settings-overlay-tooltip": "Move the overlay by dragging the colored bar on the left",
   "ui-settings-overlay-reset": "Reset",
   "ui-settings-overlay-autohide": "Show overlay only while in queue or FATE occurs",
-  "ui-notification-overlay-autohide": "This option will be appplied after waiting queue state changes or new FATE occurs.\nRestarting the application also make immediate appliance.\n\nWhile waiting for client connection, overlay is shown.\n(To notice user that application is working well or not.)",
+  "ui-notification-overlay-autohide": "This option will be appplied after waiting queue state changes or new FATE occurs.\nRestarting the application also make immediate appliance.\n\nWhile waiting for client connection, overlay is shown.\n(To notice user whether application is working well or not.)",
   "ui-settings-startupshow": "Show window when program starts",
   "ui-settings-iconflash": "FFXIV icon blinks when duty matched/FATE occurs",
   "ui-settings-cheatroulette": "Show actual matched duty when using Duty Roulette",
-  "ui-settings-usevpn": "I use VPN, DFAssist is not catching Game Connection.",
-  "ui-settings-usevpn-alert": "When you are not using VPN, please disable this option.",
+  "ui-settings-copymacro": "Automatically copy macro from duty data when duty matched",
+  "ui-settings-copymacro-dialog-title": "DFA Copy macro",
+  "ui-settings-copymacro-dialog-text": "Copy <{0}> macro to clipboard?",
+  "ui-settings-usevpn": "don't Filter local network connection (VPN, etc)",
+  "ui-settings-usevpn-alert": "Normally, you have to turn off this option to capture network packet.",
   "ui-settings-fatesound": "Enable FATE notification sound\n(disables custom sound)",
   "ui-settings-customsound": "Custom FATE/Duty notification sound",
   "ui-settings-getsoundfile": "Select file",
@@ -87,13 +92,13 @@
   "ui-logs-copy": "Copy Logs",
   "ui-logs-clear": "Clear",
 
-  "ui-info-about": "[Contributor]\n유채색\nLaiglinne\nHibiyasleep\nAlex00728\n[Support] : fpdhs698\n[Copyright]\nAll company, product, system names are\n registered or unregistered trademarks of their respective owners.\n(C)2010 - 2019 SQUARE ENIX CO., LTD All Rights Reserved.\nKorea Published by ACTOZ SOFT.",
+  "ui-info-about": "[Contributor]\n유채색\nLaiglinne\nHibiyasleep\nAlex00728 (Jaehyuk-Lee)\n[Support] : fpdhs698\n[Copyright]\nAll company, product, system names are\n registered or unregistered trademarks of their respective owners.\n(C)2010 - 2019 SQUARE ENIX CO., LTD All Rights Reserved.\nKorea Published by ACTOZ SOFT.",
 
   "ui-msgbox-title-info": "DFA Notice",
   "ui-msgbox-title-warning": "DFA warning",
   "ui-msgbox-title-error": "DFA error",
 
-  "ui-language-changed": "Language changed to English.\nPlease restart the application for it to fully take effect.",
+  "ui-language-changed": "Language changed to English.\nOverlay language will be applied after queue status changes.\nPlease restart the application for it to fully take effect right away.",
 
   "ui-clipboard-copied": "Copied to clipboard.",
 

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -77,6 +77,7 @@ namespace App
                 new Language { Name = "한국어", Code = "ko-kr" },
                 new Language { Name = "English", Code = "en-us" },
                 new Language { Name = "Français", Code = "fr-fr" },
+                new Language { Name = "Deutsch", Code = "de-de" },
                 new Language { Name = "日本語", Code = "ja-jp" },
             };
 
@@ -107,6 +108,7 @@ namespace App
                 Settings.Save();
             }
             SetCheatRoulleteCheckBox(Settings.CheatRoulette);
+            checkBox_CopyMacro.Checked = Settings.copyMacro;
             // checkBox_Twitter.Checked = Settings.TwitterEnabled;
             // textBox_Telegram.Enabled = Settings.TwitterEnabled;
             // textBox_Telegram.Text = Settings.TwitterAccount;
@@ -278,6 +280,7 @@ namespace App
             Settings.autoHideOverlay = checkBox_autoHideOverlay.Checked;
             Settings.Save();
         }
+
         private void checkBox_autoHideOverlay_MouseClick(object sender, MouseEventArgs e)
         {
             if (checkBox_autoHideOverlay.Checked)
@@ -359,6 +362,12 @@ namespace App
             }
 
             Settings.CheatRoulette = checkBox_CheatRoullete.Checked;
+            Settings.Save();
+        }
+
+        private void checkBox_CopyMacro_CheckedChanged(object sender, EventArgs e)
+        {
+            Settings.copyMacro = checkBox_CopyMacro.Checked;
             Settings.Save();
         }
 
@@ -691,6 +700,18 @@ namespace App
             PresetAccept(arr);
         }
 
+        private void frogSuitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int[] arr = { 1426, 1427, 1428, 1429, 1430, 1431, 1432 };
+            PresetAccept(arr);
+        }
+
+        private void frogMountToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int[] arr = { 1462, 1463, 1464, 1477, 1478, 1479 };
+            PresetAccept(arr);
+        }
+
         private void SetCheatRoulleteCheckBox(bool @checked)
         {
             checkBox_CheatRoullete.CheckedChanged -= checkBox_CheatRoullete_CheckedChanged;
@@ -793,12 +814,14 @@ namespace App
             checkBox_Overlay.Text = Localization.GetText("ui-settings-overlay-use");
             toolTip.SetToolTip(checkBox_Overlay, Localization.GetText("ui-settings-overlay-tooltip"));
             button_ResetOverlayPosition.Text = Localization.GetText("ui-settings-overlay-reset");
+            checkBox_autoHideOverlay.Text = Localization.GetText("ui-settings-overlay-autohide");
             checkBox_StartupShow.Text = Localization.GetText("ui-settings-startupshow");
             checkBox_FlashWindow.Text = Localization.GetText("ui-settings-iconflash");
             checkBox_FateSound.Text = Localization.GetText("ui-settings-fatesound");
             checkBox_CustomSound.Text = Localization.GetText("ui-settings-customsound");
             button_getSoundFile.Text = Localization.GetText("ui-settings-getsoundfile");
             checkBox_CheatRoullete.Text = Localization.GetText("ui-settings-cheatroulette");
+            checkBox_CopyMacro.Text = Localization.GetText("ui-settings-copymacro");
             checkBox_useVPN.Text = Localization.GetText("ui-settings-usevpn");
             // groupBox_TwitterSet.Text = Localization.GetText("ui-3rdparty-twitter-title");
             // checkBox_Twitter.Text = Localization.GetText("ui-3rdparty-twitter-activate");
@@ -828,6 +851,8 @@ namespace App
             bookOfSkyearthIToolStripMenuItem.Text = Localization.GetText("fate-preset-animus-SkyearthI");
             IxionToolStripMenuItem.Text = Localization.GetText("fate-preset-Ixion");
             TamamoToolStripMenuItem.Text = Localization.GetText("fate-preset-Tamamo");
+            frogMountToolStripMenuItem.Text = Localization.GetText("fate-preset-frogMount");
+            frogSuitToolStripMenuItem.Text = Localization.GetText("fate-preset-frogSuit");
             toolStripMenuItem_SelectApply.Text = Localization.GetText("ui-fate-apply");
             label_FATEAbout.Text = Localization.GetText("ui-fate-about");
             toolStripMenuItem_LogCopy.Text = Localization.GetText("ui-logs-copy");
