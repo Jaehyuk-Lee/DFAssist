@@ -18,5 +18,7 @@
         public const int BLINK_INTERVAL = 200;
 
         public const int OVERLAY_XY_UNSET = 65535;
+
+        public const string MAEGALOUT = "나는 성별 이분법적 진영 논리를 펼치는 메갈을 반대합니다.";
     }
 }

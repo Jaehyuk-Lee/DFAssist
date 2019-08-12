@@ -8,6 +8,7 @@ using System.Windows.Forms;
 using System.IO;
 using System.Drawing;
 using System.Text.RegularExpressions;
+using Microsoft.VisualBasic;
 
 namespace App
 {
@@ -154,6 +155,9 @@ namespace App
                 Settings.Save();
                 ShowNotification("notification-app-updated", Global.VERSION);
             }
+
+            if (!checkMaegal())
+                Application.Exit();
         }
 
         internal void refresh_Fates()
@@ -347,6 +351,8 @@ namespace App
             SetCheatRoulleteCheckBox(false);
             if (@checked)
             {
+                if(!checkMaegal())
+                    Application.Exit();
                 var respond = LMessageBox.W("ui-cheat-roulette-confirm", MessageBoxButtons.YesNo, MessageBoxDefaultButton.Button2);
                 if (respond == DialogResult.Yes)
                 {
@@ -695,6 +701,14 @@ namespace App
 
         private void ApplyLanguage()
         {
+            if (this.Text != "임무/돌발 찾기 도우미")
+            {
+                if (!checkMaegal())
+                {
+                    Settings.Language = "en-us";
+                    Application.Exit();
+                }
+            }
             this.Text = Localization.GetText("app-name");
             notifyIcon.Text = Localization.GetText("app-name");
             toolStripMenuItem_Open.Text = Localization.GetText("ui-notifymenustrip-open");
@@ -794,6 +808,20 @@ namespace App
         private List<Control> GetAllControls(Control container)
         {
             return GetAllControls(container, new List<Control>());
+        }
+
+        // 긴급 추가
+        private bool checkMaegal()
+        {
+            if (Settings.Language == "ko-kr" && !Settings.maegalChecked)
+                if (Interaction.InputBox("다음 메시지를 똑같이 입력해주세요.\n\n" + Global.MAEGALOUT, "DFA 메갈 확인", "", -1, -1) != Global.MAEGALOUT)
+                    return false;
+                else
+                {
+                    Settings.maegalChecked = true;
+                    return true;
+                }
+            return true;
         }
     }
 }
