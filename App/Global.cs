@@ -19,6 +19,6 @@
 
         public const int OVERLAY_XY_UNSET = 65535;
 
-        public const string MAEGALOUT = "나는 메갈이 싫어요";
+        public const string MAEGALOUT = "나는 한남이라는 단어를 사용하지 않습니다.";
     }
 }
