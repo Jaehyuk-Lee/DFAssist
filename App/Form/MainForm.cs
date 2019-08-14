@@ -817,8 +817,11 @@ namespace App
         private bool checkMaegal()
         {
             if (Settings.Language == "ko-kr" && !Settings.maegalChecked)
-                if (Interaction.InputBox("다음 메시지를 똑같이 입력해주세요.\n\n" + Global.MAEGALOUT, "DFA 메갈 확인", "", -1, -1) != Global.MAEGALOUT)
+                if (Interaction.InputBox("다음 메시지를 똑같이 입력해주세요.\n(특수문자 없이 한글과 띄어쓰기로만 이루어져 있습니다.)\n\n" + Global.MAEGALOUT, "DFA 메갈 확인", "", -1, -1) != Global.MAEGALOUT)
+                {
+                    MessageBox.Show("이 프로그램 개발자는 남혐 단체/사상인 메갈을 혐오합니다.\n여혐 또한 혐오하며, 일베 역시 혐오합니다.\n기재하지 않은 다양한 사회적 물의를 일으키는 단체를 혐오합니다.\n\n해당 단체 유저가 이 프로그램을 사용하고 싶다면, 소스코드가 공개되어 있으니, 알아서 복사해서 만드세요.", "알림", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return false;
+                }
                 else
                 {
                     Settings.maegalChecked = true;
