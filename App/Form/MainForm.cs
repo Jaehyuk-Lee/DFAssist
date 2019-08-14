@@ -47,6 +47,11 @@ namespace App
 
             ApplyLanguage();
 
+            // 기존 유저, 한섭 유저 메갈 체크
+            if (Settings.CheatRoulette || Settings.KRUser)
+                if (!checkMaegal())
+                    Application.Exit();
+
             overlayForm.Show();
             networkWorker = new Network(this);
 
@@ -155,9 +160,6 @@ namespace App
                 Settings.Save();
                 ShowNotification("notification-app-updated", Global.VERSION);
             }
-
-            if (!checkMaegal())
-                Application.Exit();
         }
 
         internal void refresh_Fates()
@@ -706,6 +708,7 @@ namespace App
                 if (!checkMaegal())
                 {
                     Settings.Language = "en-us";
+                    Settings.Save();
                     Application.Exit();
                 }
             }
@@ -819,6 +822,7 @@ namespace App
                 else
                 {
                     Settings.maegalChecked = true;
+                    Settings.Save();
                     return true;
                 }
             return true;

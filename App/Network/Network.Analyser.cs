@@ -278,6 +278,11 @@ namespace App
 
                         if (rouletteCode != 0 && (data[15] == 0 || data[15] == 64)) //무작위 임무 신청, 한국서버/글로벌 서버
                         {
+                            if(data[15] == 0)
+                            {
+                                Settings.KRUser = true;
+                                Settings.Save();
+                            }
                             var roulette = Data.GetRoulette(rouletteCode);
                             mainForm.overlayForm.SetRoulleteDuty(roulette);
                             Log.I("l-queue-started-roulette", roulette.Name);
@@ -486,6 +491,9 @@ namespace App
 
                     state = State.MATCHED;
                     mainForm.overlayForm.SetDutyAsMatched(instance);
+
+                    Settings.KRUser = true;
+                    Settings.Save();
 
                     if (Settings.FlashWindow)
                     {

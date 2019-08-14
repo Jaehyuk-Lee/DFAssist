@@ -27,6 +27,7 @@ namespace App
         public static bool CheatRoulette { get; set; } = false;
         public static bool copyMacro { get; set; } = false;
         public static bool maegalChecked { get; set; } = false;
+        public static bool KRUser { get; set; } = false;
         public static bool Updated { get; set; } = false;
         public static bool customHttpRequest { get; set; } = false;
         public static string customHttpUrl { get; set; } = "";
@@ -68,6 +69,7 @@ namespace App
                 CheatRoulette = iniFile.ReadValue("misc", "cheatroulette") == "1";
                 copyMacro = iniFile.ReadValue("misc", "copymacro") == "1";
                 maegalChecked = iniFile.ReadValue("misc", "maegalChecked") == "1";
+                KRUser = iniFile.ReadValue("misc", "KRUser") == "1";
                 Language = iniFile.ReadValue("misc", "language") ?? "ko-kr";
                 Updated = iniFile.ReadValue("internal", "updated") == "1";
                 customHttpRequest = iniFile.ReadValue("http", "customHttpRequest") == "1";
@@ -102,6 +104,7 @@ namespace App
             iniFile.WriteValue("misc", "cheatroulette", CheatRoulette ? "1" : "0");
             iniFile.WriteValue("misc", "copymacro", copyMacro ? "1" : "0");
             iniFile.WriteValue("misc", "maegalChecked", maegalChecked ? "1" : "0");
+            iniFile.WriteValue("misc", "KRUser", KRUser ? "1" : "0");
             iniFile.WriteValue("misc", "language", Language);
             iniFile.WriteValue("fate", "fates", string.Join(",", FATEs));
             iniFile.WriteValue("internal", "updated", Updated ? "1" : "0");
